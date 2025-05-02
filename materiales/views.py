@@ -1,8 +1,9 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-
+from django.views.decorators.csrf import csrf_exempt
 from materiales.models import MaterialMedicoReservable
 
+@csrf_exempt
 def reservar_material(request):
     material = MaterialMedicoReservable.objects.filter(estado='disponible').first()
 
