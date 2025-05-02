@@ -5,6 +5,7 @@ from admissions.views import AdmissionViewSet
 from admissions.views import admitir_paciente
 from camas.views import obtener_camas_disponibles
 from healthcheck.views import health_check
+from materiales.views import reservar_material
 
 router = DefaultRouter()
 router.register(r'admissions', AdmissionViewSet)
@@ -15,4 +16,5 @@ urlpatterns = [
     path('admitir/', admitir_paciente, name='admitir_paciente'),
     path('disponibles/', obtener_camas_disponibles, name='camas_disponibles'),
     path('health/', health_check, name='health_check'),
+    path('reservar/', reservar_material, name='reservar_material'),
 ]

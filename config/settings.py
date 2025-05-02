@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'admissions',
     'camas',
+    'materiales',
     'healthcheck.apps.HealthcheckConfig', 
     'rest_framework',
 
