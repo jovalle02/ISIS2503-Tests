@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'admissions',
     'camas',
-    'healthcheck.apps.HealthcheckConfig',
+    'healthcheck.apps.HealthcheckConfig', 
+    'material_medico.apps.MaterialMedicoConfig',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
