@@ -13,7 +13,7 @@
 
 resources:
 # Firewall rules
-- name: authd-firewall-django
+- name: authd-sprint3-firewall-django
   type: compute.v1.firewall
   properties:
     network: https://www.googleapis.com/compute/v1/projects/isis2503-talleres-451604/global/networks/default
@@ -27,7 +27,7 @@ resources:
     - IPProtocol: TCP
       ports: 
       - 8080
-- name: authd-firewall-db
+- name: authd-sprint3-firewall-db
   type: compute.v1.firewall
   properties:
     network: https://www.googleapis.com/compute/v1/projects/isis2503-talleres-451604/global/networks/default
@@ -44,7 +44,7 @@ resources:
 
 # Database instance
 - type: compute.v1.instance
-  name: authd-db-instance
+  name: authd-sprint3-db-instance
   properties:
     zone: us-central1-a
     machineType: https://www.googleapis.com/compute/v1/projects/isis2503-talleres-451604/zones/us-central1-a/machineTypes/e2-micro
@@ -80,7 +80,7 @@ resources:
 
 # Monitoring app django instance
 - type: compute.v1.instance
-  name: authd-django-instance
+  name: authd-sprint3-django-instance
   properties:
     zone: us-central1-a
     machineType: https://www.googleapis.com/compute/v1/projects/isis2503-talleres-451604/zones/us-central1-a/machineTypes/e2-micro
